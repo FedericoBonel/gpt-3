@@ -1,0 +1,70 @@
+/* This is going to be the styles for the component */
+/* Container of everything */
+.website__blog-container_article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-blog);
+    transition: 0.3s;
+}
+.website__blog-container_article:hover {
+    transform: scale(1.05);
+}
+
+/* Image container */
+.website__blog-container_article-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: var(--color-blog);
+}
+
+/* Image it self */
+.website__blog-container_article-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Content underneath image */
+.website__blog-container_article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    height: 100%;
+}
+
+/* all the paragraphs (i.e. date) */
+.website__blog-container_article-content p {
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 11.5px;
+    line-height: 35px;
+    color: #fff;
+}
+
+/* all the headers size 3 (i.e. title) */
+.website__blog-container_article-content h3 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* override last paragraph (i.e. link to article) */
+.website__blog-container_article-content p:last-child {
+    cursor: pointer;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 550px) {
+    .website__blog-container_article-content h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

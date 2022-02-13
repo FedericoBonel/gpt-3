@@ -1,0 +1,84 @@
+/* Container of everything */
+.website__possibility {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Image conatiner*/
+.website__possibility-image {
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+}
+/* Image it self */
+.website__possibility-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Content container */
+.website__possibility-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+/* Smaller link at the top and bottom*/
+.website__possibility-content h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-text);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.website__possibility-content h4:hover{
+    color: #fff;
+}
+/* Override some of the stuff for the last child since is slighty different */
+.website__possibility-content h4:last-child{
+    color: var(--color-subtext);
+}
+.website__possibility-content h4:last-child:hover {
+    color: #fff;
+}
+
+/* Main header */
+.website__possibility-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 1rem 0;
+}
+
+/* Paragraph */
+.website__possibility-content p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+
+/* Media queries for responsivness */
+
+/* This is good enough for larger and smaller devices */
+@media screen and (max-width: 950px) {
+    .website__possibility {
+        flex-direction: column;
+    }
+
+    .website__possibility-image {
+        margin: 1rem 0;
+    }
+
+    .website__possibility-content {
+        margin-top: 2rem;
+    }
+}

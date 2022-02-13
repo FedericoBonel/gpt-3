@@ -1,0 +1,168 @@
+/* This is going to be the styles for the component */
+
+/* Style of all the navbar and its items */
+.website__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+    /* This fixes the var at the top while scrolling */
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: var(--color-footer);
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Container of the buttons of the navbar or "links" */
+.website__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Logo container of the navbar "GPT-3" */
+.website__navbar-links_logo {
+    margin-right: 2rem;
+}
+/* Image of the logo in the navbar */
+.website__navbar-links_logo img {
+    width: 62px;
+    height: 16px;
+}
+
+/* Links/Buttons of the navbar */
+.website__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sign in button in navbar */
+.website__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Every paragraph of the links container, the sign in button and menu container 
+(i.e. all the texts)*/
+.website__navbar-links_container p,
+.website__navbar-sign p,
+.website__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.website__navbar-links_container p:hover,
+.website__navbar-sign p:hover,
+.website__navbar-menu_container p:hover { 
+    color: var(--color-subtext);
+}
+
+/* Button Sign Up */
+.website__navbar-sign button,
+.website__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    font-family: var(--font-family);
+    color: #fff;
+    background: var(--color-buttons);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.website__navbar-sign button:hover,
+.website__navbar-menu_container button:hover {
+    background-color: var(--color-button-SignIn-hover);
+}
+.website__navbar-sign button:active,
+.website__navbar-menu_container button:active {
+    background-color: var(--color-button-SignIn-active);
+}
+
+/* Mobile menu container */
+.website__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+/* Mobile menu links/buttons container */
+.website__navbar-menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+/* For each one of the links */
+.website__navbar-menu_container p {
+    margin: 1rem 0;
+}
+/* For the sign in and sign up buttons */
+.website__navbar-menu_container-links-sign {
+    display: none;
+}
+
+/* Now media queries for different devices */
+
+/* Tablet devices */
+@media screen and (max-width: 1050px) {
+    /* Hide the navbar to only display the menu */
+    .website__navbar-links_container {
+        display: none;
+    }
+
+    .website__navbar-menu {
+        display: flex;
+    }
+}
+
+/* smaller devices */
+@media screen and (max-width: 700px) {
+    .website__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+/* smallest devices */
+@media screen and (max-width: 550px) {
+    .website__navbar {
+        padding: 2rem;
+    }
+    /* hide the buttons bc there is no space */
+    .website__navbar-sign {
+        display: none;
+    }
+    /* Pull the menu slighty upwards to be closer from button */
+    .website__navbar-menu_container {
+        top: 20px;
+    }
+    /* Show the buttons from the menu */
+    .website__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
+

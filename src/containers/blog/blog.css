@@ -1,0 +1,82 @@
+/* This is going to be the styles for the component */
+/* Container of everything */
+.website__blog {
+    display: flex;
+    flex-direction: column;
+}
+
+/* heading container of the articles */
+.website__blog-heading {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+/* heading it self */
+.website__blog-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+/* Article container */
+.website__blog-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Latest article */
+.website__blog-container_groupLatest {
+    flex: 0.75;
+    margin-right: 2rem;
+}
+
+/* Older articles */
+.website__blog-container_groupOlder {
+    flex: 1;
+    display: grid;
+    /* This sets 2 columns per row */
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+/* Media queries */
+
+/* Bigger devices */
+@media screen and (max-width: 990px) {
+    .website__blog-container {
+        flex-direction: column;
+    }
+
+    .website__blog-container_groupLatest {
+        margin: 2rem 0;
+    }
+
+    .website__blog-container_groupLatest .website__blog-container_article {
+        width: 100%;
+    }
+}
+
+/* Medium devices */
+@media screen and (max-width: 750px) { 
+    .website__blog-container_groupLatest .website__blog-container_article {
+        width: 100%;
+    }
+    .website__blog-container_groupOlder {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .website__blog-heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+}
+
+/* Smaller devices */
+@media screen and (max-width: 550px) {
+    .website__blog-heading h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }    
+}
