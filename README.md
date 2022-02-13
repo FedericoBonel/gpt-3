@@ -1,5 +1,6 @@
 # GPT-3
 <sub>13 february 2022, by Federico Jorge Bonel Tozzi</sub>
+url: https://gpt3reactproj.netlify.app/
 
 _A basic responsive UI/UX static website created with React and Node_
 
