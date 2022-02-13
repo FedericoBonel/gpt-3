@@ -31,7 +31,10 @@ To actually deploy it I used a free hosting service called Netlify: netlify.com
 ## File Structure
 
 The outer structure is the same that any other website bootstrapped by Node JS...
+
 ![Really?](https://c.tenor.com/kT9luj_7U94AAAAd/willy-wonka.gif)
+
+
 I know I know, let me elaborate.
 Inside the public folder we have the main index.html file.
 Inside the src file we have three folders, one (components) with the most basic components (Articles, navbar, features, etc.), another one (containers) for the components of the website that are made up of other components (i.e the sections: Header, Blog, etc.) and the assets is for all the media that we use in the website.
