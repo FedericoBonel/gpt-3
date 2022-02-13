@@ -43,4 +43,4 @@ The index.js in components and containers folders exports all the react apps in 
 
 ### License
 
-Download and use it as you want!
+Download and use it as you want! (Don't forget to use node and the node modules if you do so though)
