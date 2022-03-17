@@ -41,6 +41,10 @@ Inside the src file we have three folders, one (components) with the most basic 
 The index.js inserts our App.js in the index.html, the App.js is the main react app, it's basically a box that contains all the html code to insert in the body of our website. This is made up of 9 react components. The css files at this level are bassically definitions of classes and variables that we use across every component. 
 The index.js in components and containers folders exports all the react apps in each folder at once so that way we can simplify our imports in any other js file.
 
+## Take a look at it
+
+![web-app?](https://media.giphy.com/media/gMEU9Z8gCy8bF4p3FM/giphy.gif)
+
 ### License
 
 Download and use it as you want! (Don't forget to use node and the node modules if you do so though)
