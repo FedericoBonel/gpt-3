@@ -15,10 +15,6 @@ The website design is thought out to be expanded in the future (with sections to
 - 🎆 Innovative and modern design 🎆
 - 📱 Optimized with full responsiveness for every kind of device 📱
 
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
-
 ## Tech
 
 To develop and deploy this website I used two main open source projects
