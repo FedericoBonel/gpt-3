@@ -41,6 +41,12 @@ The index.js in components and containers folders exports all the react apps in 
 
 ![web-app?](https://media.giphy.com/media/gMEU9Z8gCy8bF4p3FM/giphy.gif)
 
+## Requirements
+
+* Node.js
+* React
+* JavaScript
+
 ### License
 
-Download and use it as you want! (Don't forget to use node and the node modules if you do so though)
+Download and use it as you want!
