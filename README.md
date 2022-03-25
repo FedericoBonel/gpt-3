@@ -17,7 +17,7 @@ The website design is thought out to be expanded in the future (with sections to
 
 ## Tech
 
-To develop and deploy this website I used two main open source projects
+To develop this website I used two main open source projects
 
 - NodeJS: The develop, test, run, and deploy the website
 - React: To make every component in the website modular and reusable
