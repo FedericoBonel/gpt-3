@@ -7,6 +7,21 @@ _A basic responsive UI/UX static website created with React and Node_
 
 The website design is thought out to be expanded in the future (with sections to get early access, contact, etc.) and have a persistancy layer for the articles.
 
+## How to start using this repo?
+
+1. Install nodeJS
+2. Clone this repository.
+3. Navigate to the cloned repo root folder.
+4. Install the application to download dependencies:
+
+        npm install
+        
+5. Run the build script to create an optimized version of the app:
+
+        npm run build
+        
+6. Serve the ./build folder with some package (You could use the [serve package](https://www.npmjs.com/package/serve))
+7. Done and done! You can now go to the url where you are serving this client and access it!
 
 ## Features
 
@@ -20,7 +35,7 @@ The website design is thought out to be expanded in the future (with sections to
 To develop this website I used two main open source projects
 
 - NodeJS: The develop, test, run, and deploy the website
-- React: To make every component in the website modular and reusable
+- ReactJS: To make every component in the website modular and reusable
 
 To actually deploy it I used a free hosting service called Netlify: netlify.com
 
